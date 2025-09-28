@@ -8,18 +8,18 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Node modules
-frontend/node_modules
-backend/node_modules
+Frontend/node_modules
+Backend/node_modules
 
 # Build output
-frontend/dist
-backend/dist
-frontend/dist-ssr
-backend/dist-ssr
+Frontend/dist
+Backend/dist
+Frontend/dist-ssr
+Backend/dist-ssr
 
 # Local env files
-frontend/.env
-backend/.env
+Frontend/.env
+Backend/.env
 
 # Editor directories and files
 .vscode/*
@@ -31,3 +31,7 @@ backend/.env
 *.njsproj
 *.sln
 *.sw?
+
+# Readme 
+Frontend/README.md
+Backend/README.md
