@@ -1,0 +1,15 @@
+# npm i validator 
+  - to verify email , strongPassword,photoUrl etc --> regex witrhout writing regex.
+# Token (authentication and authorization) 
+ - need 
+   - secret key 
+   - function 
+  # npm i cookie-parser (to parse the value in cookie) to explore more https://expressjs.com/en/api.html#res.cookie  and  https://expressjs.com/en/resources/middleware/cookie-session.html
+  - npm i jsonwebtoken (use to create token and validate it.)  to explore more https://www.npmjs.com/package/jsonwebtoken
+  
+# signIn (server.js) -> maxAge:7*24*60*60*100 {used in cookie, it always accept value in number (expireIn:'7d' in token takes input as string) to make maxAge to work like expiresIn need to follow steps }
+  - 1. npm i ms
+  - 2. const ms = require('ms').
+  - 3. maxAge:ms('2h')  
+  - 4. now it can even take the  value in fraction like 2.5h unlike expiresIn, ms doesn't work with expiresIn
+   - maxAge: 0 (expires immediately)
